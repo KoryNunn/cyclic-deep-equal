@@ -1,0 +1,26 @@
+{
+  "name": "cyclic-deep-equal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/cyclic-deep-equal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/cyclic-deep-equal/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/cyclic-deep-equal#readme",
+  "description": "a strict deep-equal that can handle cyclic structures"
+}
