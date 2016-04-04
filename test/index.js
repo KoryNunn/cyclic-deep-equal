@@ -17,6 +17,11 @@ test('not equal', function (t) {
     t.end();
 });
 
+test('object vs null', function (t) {
+    t.notOk(equal({}, null));
+    t.end();
+});
+
 test('nested nulls', function (t) {
     t.ok(equal([ null, null, null ], [ null, null, null ]));
     t.end();

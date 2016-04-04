@@ -5,7 +5,7 @@ function compare(a, b, visited){
         return false;
     }
 
-    if(a == null || !(aType === 'object' || aType === 'function')){
+    if(a == null || b == null || !(aType === 'object' || aType === 'function')){
         if(aType === 'number' && isNaN(a) && isNaN(b)){
             return true;
         }
