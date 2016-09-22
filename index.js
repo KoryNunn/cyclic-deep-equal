@@ -35,10 +35,12 @@ function compare(a, b, visited){
             equal = false;
             return;
         }
-        if(visited.has(a[key])){
-            return;
+        if(a[key] && a[key] instanceof Object){
+            if(visited.has(a[key])){
+                return;
+            }
+            visited.add(a[key]);
         }
-        visited.add(a[key]);
         if(!compare(a[key], b[key], visited)){
             equal = false;
             return;

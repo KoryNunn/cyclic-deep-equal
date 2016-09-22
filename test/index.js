@@ -83,3 +83,11 @@ test('cyclic references', function (t) {
     t.ok(equal(x1, x2));
     t.end();
 });
+
+test('bool equal', function (t) {
+    var x1 = {a:true, b:true},
+        x2 = {a:true, b:false};
+
+    t.notOk(equal(x1, x2));
+    t.end();
+});
